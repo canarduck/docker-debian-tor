@@ -11,7 +11,7 @@ RUN apt update -y \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /usr/share/doc/*
 
-COPY ./config/torrc /etc/tor/torrc
+COPY torrc /etc/tor/torrc
 
 EXPOSE 9050
 
